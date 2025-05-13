@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng | Pink Camera Store.</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="logo">Pink Camera Store.</a>
+        <ul class="nav-links">
+          <li><a href="/">Trang chủ</a></li>
+          <li><a href="/products.html">Sản phẩm</a></li>
+          <li><a href="/cart.html">Giỏ hàng</a></li>
+          <li><a href="/login.html" id="loginLink">Đăng nhập</a></li>
+          <li><a href="/register.html">Đăng ký</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 style="margin: 30px 0;">Giỏ hàng của bạn</h1>
+    
+    <div id="cartEmpty" style="text-align: center; display: none;">
+      <p>Giỏ hàng của bạn đang trống. <a href="/products.html">Tiếp tục mua sắm</a></p>
+    </div>
+    
+    <div id="cartItems" class="cart-items">
+      <!-- Sản phẩm trong giỏ hàng sẽ được hiển thị bởi JavaScript -->
+    </div>
+    
+    <div class="cart-total" id="cartTotal">
+      <!-- Tổng tiền sẽ được tính bởi JavaScript -->
+    </div>
+    
+    <div style="text-align: right; margin-top: 20px;">
+      <button id="checkoutBtn" class="btn">Tiến hành thanh toán</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Pink Camera Store.</p>
+    </div>
+  </footer>
+
+  <script src="/js/auth-check.js"></script>
+  <script src="/js/cart.js"></script>
+</body>
+</html>
